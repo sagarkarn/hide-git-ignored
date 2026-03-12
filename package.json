@@ -1,0 +1,61 @@
+{
+  "name": "hide-git-ignored",
+  "displayName": "Hide Git Ignored",
+  "version": "0.0.1",
+  "description": "Toggle visibility of git-ignored files and folders in Explorer.",
+  "publisher": "local",
+  "engines": {
+    "vscode": "^1.110.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./out/extension.js",
+  "scripts": {
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "vscode:prepublish": "npm run compile"
+  },
+  "contributes": {
+    "commands": [
+      {
+        "command": "hideGitIgnored.toggle",
+        "title": "Hide Git-Ignored: Toggle",
+        "icon": {
+          "light": "media/eye-slash.svg",
+          "dark": "media/eye-slash.svg"
+        }
+      },
+      {
+        "command": "hideGitIgnored.hide",
+        "title": "Hide Git-Ignored: Hide"
+      },
+      {
+        "command": "hideGitIgnored.show",
+        "title": "Hide Git-Ignored: Show"
+      }
+    ],
+    "menus": {
+      "view/title": [
+        {
+          "command": "hideGitIgnored.toggle",
+          "when": "view == workbench.explorer.fileView",
+          "group": "navigation@99"
+        }
+      ]
+    }
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@types/node": "^25.4.0",
+    "@types/vscode": "^1.110.0",
+    "@vscode/vsce": "^3.7.1",
+    "typescript": "^5.9.3"
+  }
+}
