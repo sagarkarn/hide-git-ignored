@@ -1,7 +1,7 @@
 {
   "name": "hide-git-ignored-explorer-toggle",
   "displayName": "Hide Git Ignored Explorer Toggle",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Toggle visibility of git-ignored files and folders in Explorer.",
   "icon": "media/extension-icon.png",
   "publisher": "sagarkarn",
