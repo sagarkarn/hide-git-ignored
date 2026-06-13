@@ -33,9 +33,4 @@ The extension updates VS Code's built-in setting `explorer.excludeGitIgnore`.
 npx vsce package
 ```
 
-## Icon attribution
 
-- Explorer button icon file: `media/eye-slash.svg`
-- Source: Bootstrap Icons (open source)
-- URL: https://github.com/twbs/icons/blob/main/icons/eye-slash.svg
-- License: MIT

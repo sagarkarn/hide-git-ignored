@@ -1,9 +1,18 @@
 {
-  "name": "hide-git-ignored",
-  "displayName": "Hide Git Ignored",
-  "version": "0.0.1",
+  "name": "hide-git-ignored-explorer-toggle",
+  "displayName": "Hide Git Ignored Explorer Toggle",
+  "version": "0.0.2",
   "description": "Toggle visibility of git-ignored files and folders in Explorer.",
-  "publisher": "local",
+  "icon": "media/extension-icon.png",
+  "publisher": "sagarkarn",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sagarkarn/hide-git-ignored.git"
+  },
+  "homepage": "https://github.com/sagarkarn/hide-git-ignored#readme",
+  "bugs": {
+    "url": "https://github.com/sagarkarn/hide-git-ignored/issues"
+  },
   "engines": {
     "vscode": "^1.110.0"
   },
@@ -24,10 +33,7 @@
       {
         "command": "hideGitIgnored.toggle",
         "title": "Hide Git-Ignored: Toggle",
-        "icon": {
-          "light": "media/eye-slash.svg",
-          "dark": "media/eye-slash.svg"
-        }
+        "icon": "$(eye-closed)"
       },
       {
         "command": "hideGitIgnored.hide",
@@ -48,8 +54,13 @@
       ]
     }
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "git",
+    "explorer",
+    "ignore",
+    "toggle"
+  ],
+  "author": "Sagar Karn",
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
